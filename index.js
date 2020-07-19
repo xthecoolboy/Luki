@@ -237,9 +237,7 @@ client.on('guildMemberRemove', async (member) => {
   client.on('error', (error) => {
   console.log(error)
   })
-
-  client.login(client.config.token);
-
+client.login(process.env.BOT_TOKEN);
 };
 
 init();
